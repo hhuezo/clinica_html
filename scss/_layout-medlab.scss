@@ -1,0 +1,112 @@
+.layout-medlab {
+  @include media-breakpoint-down(sm) {
+    .tab-content > .tab-pane h3 {
+      margin-bottom: 15px;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .tab-content > .tab-pane h3 {
+      margin-bottom: 10px;
+    }
+  }
+  ul.marker-list-md {
+    color: $headings-color;
+  }
+  @include media-breakpoint-down(lg) {
+    ul.marker-list-md {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .btn, &:not(.touch) .btn:focus {
+    font-weight: 500;
+    color: #fff;
+    background: theme-color("primary");
+    border: 1px solid transparent;
+    box-shadow: none !important;
+    @include media-breakpoint-up(lg) {
+      &:not(.btn-xs):not(.btn-sm):not(.btn-lg) {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 15px 30px;
+      }
+    }
+    .icon-right-arrow {
+      font-size: 10px;
+    }
+    &:hover {
+      background: lighten(theme-color("primary"), 10%);
+      color: #fff;
+      border: 1px solid transparent;
+    }
+  }
+
+  .btn-fill, &:not(.touch) .btn-fill:focus,
+  .btn-hover-fill, &:not(.touch) .btn-hover-fill:focus {
+    color: #fff;
+    background: theme-color("primary");
+    border: 1px solid transparent;
+  }
+  &:not(.touch) .btn-fill, &:not(.touch) .btn-fill:focus,
+  &:not(.touch) .btn-hover-fill, &:not(.touch) .btn-hover-fill:focus {
+    &:hover {
+      background: lighten(theme-color("primary"), 10%);
+      color: #fff;
+      border: 1px solid transparent;
+      [class*='icon'] {
+        color: #fff;
+      }
+    }
+  }
+
+  .btn-white, .btn-white:focus, &:not(.touch) .btn-white:focus {
+    border-color: #fff;
+    color: theme-color("primary");
+    background-color: #ffffff;
+    @include media-breakpoint-down(sm) {
+      box-shadow: inset 0 0 0 1px #fff;
+    }
+  }
+
+  &:not(.touch) .btn-white:hover, .btn-white:hover {
+    color: #fff;
+    background-color: theme-color("primary");
+    [class*='icon'] {
+      color: #fff;
+    }
+  }
+
+  &:not(.touch) .btn-white--all:hover, .btn-white--all:hover {
+    color: theme-color("primary");
+    background-color: #ffffff;
+    [class*='icon'] {
+      color: theme-color("primary");
+    }
+  }
+  .services-tab-wrap {
+    padding: 30px 44px 80px 0;
+  }
+  @include media-breakpoint-down(xl) {
+    .services-tab-wrap {
+      padding: 30px 30px 50px 15px;
+    }
+  }
+
+  .footer h3 {
+    font-size: 24px;
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+    }
+  }
+
+  .footer-post-title a {
+    font-size: 15px;
+  }
+  .footer-post-text, .footer-post-text p, .footer-text p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
