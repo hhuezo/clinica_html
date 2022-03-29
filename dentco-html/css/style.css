@@ -13057,14 +13057,14 @@ body:not(.touch) .services-tab-wrap .nav-link:hover {
   display: flex;
   align-items: center; }
   .banner-center-caption {
-    padding: 148px 50px;
+    padding: 10px 10px !important;
     width: 100%; }
     @media (max-width: 1023px) {
       .banner-center-caption {
-        padding: 60px 30px; } }
+        padding: 10px 5px; } }
     @media (max-width: 575px) {
       .banner-center-caption {
-        padding: 40px 10px; } }
+        padding: 20px 5px; } }
   .banner-center-text1 {
     font-size: 38px;
     line-height: 47px;
