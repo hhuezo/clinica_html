@@ -115,11 +115,11 @@
 							<table class="row-table">
 								<tr>
 									<td><i>Lunes - Viernes</i></td>
-									<td>08:00 - 17:00</td>
+									<td>08:00 AM - 4:00 PM</td>
 								</tr>
 								<tr>
 									<td><i>Sabado</i></td>
-									<td> 15:00 - 17:00</td>
+									<td> 08:00 AM - 12:00 MD</td>
 								</tr>
 							</table>
 						</div>
@@ -178,16 +178,87 @@
 					
 					<div class="col">
 						<a href="#" class="link">
-							<i class="icon-emergency-call"></i><span>Caso de Emergencia</span></a>
+							<i class="icon-pencil-writing"></i><span>Agendar Cita</span>
+						</a>
 						<div class="link-drop">
-							<h5 class="link-drop-title"><i class="icon-emergency-call"></i>Caso de Emergencia</h5>
-							<p>En caso de emergencia con respecto a su salud contactenos con la siguiente informacion</p>
-							<ul class="icn-list">
-								<li><i class="icon-telephone"></i><span class="phone">2521 - 3705</span>
-								</li>
-								<li><i class="icon-black-envelope"></i><a href="mailto:info@besthotel-email.com">nr.unidadmedica@gmail.com</a></li>
-							</ul>
-							<p class="text-right mt-2"><a href="contact.html" class="btn btn-sm btn-hover-fill">Nuestros Contactos</a></p>
+							<h5 class="link-drop-title"><i class="icon-pencil-writing"></i>Formulario para agendar cita</h5>
+							<form id="requestForm" method="post" novalidate>
+								<div class="successform">
+									<p>Su mensaje fue enviado correctamente!</p>
+								</div>
+								<div class="errorform">
+									<p>Lo sentimos parece que algo salio mal, vuelva a intentarlo.</p>
+								</div>
+								<div class="input-group">
+									<span>
+									<i class="icon-user"></i>
+								</span>
+									<input name="requestname" type="text" class="form-control" placeholder="Su Nombre Completo" />
+								</div>
+								<div class="row row-sm-space mt-1">
+									<div class="col">
+										<div class="input-group">
+											<span>
+											<i class="icon-email2"></i>
+										</span>
+											<input name="requestemail" type="text" class="form-control" placeholder="Su Correo" />
+										</div>
+									</div>
+									<div class="col">
+										<div class="input-group">
+											<span>
+											<i class="icon-smartphone"></i>
+										</span>
+											<input name="requestphone" type="text" class="form-control" placeholder="Su numero de Telefono" />
+										</div>
+									</div>
+								</div>
+								<div class="selectWrapper input-group mt-1">
+									<span>
+									&bnsp;
+								</span>
+									<select name="requestservice" class="form-control">
+										<option selected="selected" disabled="disabled">Seleccione un servicio</option>
+										<option value="Control de diabetes y presión arterial">Control de diabetes y presión arterial</option>
+										<option value="Control prenatal de bajo riesgo">Control prenatal de bajo riesgo</option>
+										<option value="Planificación familiar">Planificación familiar</option>
+										<option value="Toma de citologías">Toma de citologías</option>
+										<option value="Control de niño sano">Control de niño sano</option>
+										<option value="Control nutricional">Control nutricional</option>
+										<option value="Inyecciones">Inyecciones</option>
+										<option value="Curaciones y pequeña cirugía">Curaciones y pequeña cirugía</option>
+										<option value="Toma y lectura de electrocardiograma">Toma y lectura de electrocardiograma</option>
+										<option value="Toma de glucosa capilar">Toma de glucosa capilar</option>
+										<option value="Terapias respiratorias">Terapias respiratorias</option>
+										<option value="Vacunaciones">Vacunaciones</option>
+									</select>
+								</div>
+								<div class="row row-sm-space mt-1">
+									<div class="col-sm-6">
+										<div class="input-group flex-nowrap">
+											<span>
+												<i class="icon-calendar2"></i>
+											</span>
+											<div class="datepicker-wrap">
+												<input name="requestdate" type="text" class="form-control datetimepicker" placeholder="Fecha" readonly>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 mt-1 mt-sm-0">
+										<div class="input-group flex-nowrap">
+											<span>
+													<i class="icon-clock"></i>
+											</span>
+											<div class="datepicker-wrap">
+												<input name="requesttime" type="text" class="form-control timepicker" placeholder="Hora" readonly>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="text-right mt-2">
+									<button type="submit" class="btn btn-sm btn-hover-fill">Enviar</button>
+								</div>
+							</form>
 						</div>
 					</div>
 					<div class="col col-close"><a href="#" class="js-quickLinks-close"><i class="icon-top" data-toggle="tooltip" data-placement="top" title="Cerrar"></i></a></div>
@@ -222,7 +293,7 @@
 								<div class="collapse show" id="submenu1">
 									<ul class="flex-column nav">
 										<li class="nav-item"><a class="nav-link" href="">Consultas Presenciales</a></li>
-										<li class="nav-item"><a class="nav-link active" href="">Teleconsultas</a></li>
+										
 									</ul>
 								</div>
 							</li>
@@ -234,6 +305,7 @@
 									<ul class="icn-list">
 										<li><i class="icon-clock"></i>Lun - Vie 08:00 - 17:00
 											<br>Sabado 15:00 - 17:00</li>
+											
 									</ul>
 								</div>
 							</div>
@@ -246,6 +318,11 @@
 												<span>Telefono:&nbsp;&nbsp;</span>
 												<span>2521-3705</div>
 										</li>
+							<li>
+								<i class="icon-telephone"></i>
+								<div class="d-flex flex-wrap">
+								<b><span class="phone"><span class="text-nowrap"><a href="https://wa.me/70002063">WhatsApp: 7000-2063</a></span></span></b></div>
+							</li>
 									</ul>
 								</div>
 							</div>
@@ -277,19 +354,60 @@
 							<p> Ofrecemos especialidades en el área de: Medicina Interna, Pediatría, Ginecología y Obstetricia, Nutrición/Medicina de Estilo de vida saludable, Atención primaria en salud y Psiquiatría/Salud Mental. Nuestros servicios también están dirigidos a personas que residan en el extranjero o que se encuentran domiciliados en El Salvador, con flexibilización de horarios e idioma.</p>
 							<div class="mt-0 mt-lg-4"></div>
 							<div class="mt-3"></div>
-							<ul class="numbered-list-lg">
-								<li>Aplicación de inyecciones y vacunas.</li>
-
-								<li>Curaciones y pequeña cirugía.</li>
-
-								<li>Terapias respiratorias para niños y adultos.</li>
-								
-								<li>Toma y lectura de electrocardiograma</li>
-
-								<li>Toma de citologías</li>
-
-								<li>Alianza comercial con laboratorios químicos y de imagen con precio preferencial a nuestros pacientes.</li>
-							</ul>
+							<div class="row">
+								<div class="col-sm">
+									<h4>Presenciales</h4>
+									<ul class="numbered-list-lg">
+										<li>Atención Primaria.</li>
+		
+										<li>Medicina de Estilo de Vida y Nutrición.</li>
+		
+										<li>Priquiatría/Salud Mental.</li>
+										
+										<li>Pediatría.</li>
+		
+										<li>Geriatría y Gerontología.</li>
+		
+										<li>Ginecología.</li>
+		
+										<li>Obstetricia.</li>
+									</ul>
+								</div>
+								<div class="col-sm">
+									<h4>Telemedicina</h4>
+									<ul class="numbered-list-lg">
+										<li>Atención Primaria.</li>
+		
+										<li>Medicina de Estilo de Vida y Nutrición.</li>
+		
+										<li>Priquiatría/Salud Mental.</li>
+										
+										<li>Pediatría.</li>
+		
+										<li>Geriatría y Gerontología.</li>
+		
+										<li>Ginecología.</li>
+										
+										<li>Obstetricia.</li>
+									</ul>
+								</div>
+								<div class="col-sm">
+									<h4>TAIES (Tele Asesoría Internacional Especializada)</h4>
+									<ul class="numbered-list-lg">
+										<li>Medicina Interna/Endocrinología.</li>
+		
+										<li>Hematooncología Pediátrica.</li>
+		
+										<li>Psiquiatría.</li>
+										
+										<li>Medicina de Estilo de Vida y Nutrición.</li>
+		
+									</ul>
+								</div>
+							  </div>
+							
+							
+							
 							<div class="mt-3"></div>
 							<!--<div class="mt-3 mt-md-5 px-1 pt-1 pb-15 pt-md-2 px-md-4 bg-grey">
 								<div id="faqAccordion1" class="faq-accordion" data-children=".faq-item">
@@ -326,62 +444,63 @@
 		</div>
 		<!--//section-->
 	</div>
-	<!--footer-->
-	<div class="footer mt-0">
-		<div class="container">
-			<div class="row py-1 py-md-2 px-lg-0">
-				<div class="col-lg-4 footer-col1">
-					<div class="row flex-column flex-md-row flex-lg-column">
-						<div class="col-md col-lg-auto">
-							<div class="footer-logo">
-								<img src="images/logonr.png" alt="" class="img-fluid">
-							</div>
-							<div class="mt-2 mt-lg-0"></div>
-							<div class="footer-social d-none d-md-block d-lg-none">
-								<a href="https://www.facebook.com/unidadmedicanr" target="blank" class="hovicon"><i class="icon-facebook-logo"></i></a>
-								<a href="https://www.twitter.com/" target="blank" class="hovicon"><i class="icon-twitter-logo"></i></a>
-								<a href="https://plus.google.com/" target="blank" class="hovicon"><i class="icon-google-logo"></i></a>
-								<a href="https://www.instagram.com/" target="blank" class="hovicon"><i class="icon-instagram"></i></a>
-							</div>
+<!--footer-->
+<div class="footer mt-0">
+	<div class="container">
+		<div class="row py-1 py-md-2 px-lg-0">
+			<div class="col-lg-4 footer-col1">
+				<div class="row flex-column flex-md-row flex-lg-column">
+					<div class="col-md col-lg-auto">
+						<div class="footer-logo">
+							<img src="images/logonr.png" alt="" class="img-fluid">
 						</div>
-						<div class="col-md">
-							<div class="footer-social d-md-none d-lg-block">
-								<a href="https://www.facebook.com/" target="blank" class="hovicon"><i class="icon-facebook-logo"></i></a>
-								<a href="https://www.twitter.com/" target="blank" class="hovicon"><i class="icon-twitter-logo"></i></a>
-								<a href="https://plus.google.com/" target="blank" class="hovicon"><i class="icon-google-logo"></i></a>
-								<a href="https://www.instagram.com/" target="blank" class="hovicon"><i class="icon-instagram"></i></a>
-							</div>
+						<div class="mt-2 mt-lg-0"></div>
+						<div class="footer-social d-none d-md-block d-lg-none">
+							<a href="https://www.facebook.com/unidadmedicanr" target="blank" class="hovicon"><i class="icon-facebook-logo"></i></a>
+							<a href="https://www.twitter.com/" target="blank" class="hovicon"><i class="icon-twitter-logo"></i></a>
+							<a href="https://plus.google.com/" target="blank" class="hovicon"><i class="icon-google-logo"></i></a>
+							<a href="https://www.instagram.com/" target="blank" class="hovicon"><i class="icon-instagram"></i></a>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="footer-social d-md-none d-lg-block">
+							<a href="https://www.facebook.com/" target="blank" class="hovicon"><i class="icon-facebook-logo"></i></a>
+							<a href="https://www.twitter.com/" target="blank" class="hovicon"><i class="icon-twitter-logo"></i></a>
+							<a href="https://plus.google.com/" target="blank" class="hovicon"><i class="icon-google-logo"></i></a>
+							<a href="https://www.instagram.com/" target="blank" class="hovicon"><i class="icon-instagram"></i></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-lg-4">
-					
-				</div>
-				<div class="col-sm-6 col-lg-4">
-					<h3>Nuestros Contactos</h3>
-					<div class="h-decor"></div>
-					<ul class="icn-list">
-						<li><i class="icon-placeholder2"></i>Colonia San Ernesto, pasaje San Carlos # 154, San Salvador.
-							<br>
-							<a href="contact.html" class="btn btn-xs btn-gradient"><i class="icon-placeholder2"></i><span>Obtener dirección</span><i class="icon-right-arrow"></i></a>
-						</li>
-						<li><i class="icon-telephone"></i><b><span class="phone"><span class="text-nowrap">2521-3705</span>, <span class="text-nowrap">1-800-267-0001</span></span></b>
-						<li><i class="icon-black-envelope"></i><a href="mailto:nr.unidadmedica@gmail.com">nr.unidadmedica@gmail.com</a></li>
-					</ul>
-				</div>
 			</div>
-		</div>
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row text-center text-md-left">
-					<div class="col-sm">Copyright © 2022 <a href="#">Unidad Medica NR</a><span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-						<a href="#">Politicas de Privacidad</a></div>
-					<div class="col-sm-auto ml-auto"><span class="d-none d-sm-inline">Para casos de emergencia&nbsp;&nbsp;&nbsp;</span><i class="icon-telephone"></i>&nbsp;&nbsp;<b>2521 - 3705</b></div>
-				</div>
+			<div class="col-sm-6 col-lg-4">
+				
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<h3>Nuestros Contactos</h3>
+				<div class="h-decor"></div>
+				<ul class="icn-list">
+					<li><i class="icon-placeholder2"></i>Colonia San Ernesto, Pasaje San Carlos, #154, San Salvador .
+						<br>
+						<a href="contact.html" class="btn btn-xs btn-gradient"><i class="icon-placeholder2"></i><span>Obtener dirección</span><i class="icon-right-arrow"></i></a>
+					</li>
+					<li><i class="icon-telephone"></i><b><span class="phone"><span class="text-nowrap">2521-3705</span></span></b>
+						<li><i class="icon-telephone"></i><b><span class="phone"><span class="text-nowrap"><a href="https://wa.me/70002063">Nuestro WhatsApp: 7000-2063</a></span></span></b>
+					<li><i class="icon-black-envelope"></i><a href="mailto:nr.unidadmedica@gmail.com">nr.unidadmedica@gmail.com</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
-	<!--//footer-->
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row text-center text-md-left">
+				<div class="col-sm">Copyright © 2022 <a href="#">Unidad Medica NR</a><span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+					<a href="#">Politicas de Privacidad</a></div>
+				<div class="col-sm-auto ml-auto"><span class="d-none d-sm-inline"><li><i class="icon-telephone"></i><b><span class="phone"><span class="text-nowrap"><a href="https://wa.me/70002063">Nuestro WhatsApp: 7000-2063</a></span></span></b></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//footer-->
 	<div class="backToTop js-backToTop">
 		<i class="icon icon-up-arrow"></i>
 	</div>
