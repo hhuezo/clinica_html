@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-atencion-humana::before{
+  content: "\F153";
+}
+
+.icon-staff{
+  content: "\F4D5";
+}
+
+.icon-precios{
+  content: "\F5B1";
+}
+
 .icon-gynecology:before {
   content: "\e95b";
 }

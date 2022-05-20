@@ -6490,13 +6490,31 @@ h6 {
   font-weight: 600;
   font-family: "Poppins", serif;
   padding: 15px 25px;
-  color: #2F609E;
+  color: #ffffff;
   border: 2px solid #2F609E;
   border-radius: 26px;
-  background: transparent;
+  background: #2F609E;
   text-transform: none;
   letter-spacing: .05em;
   transition: 0.3s; }
+
+  .btn, body:not(.touch) .btn:hover {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-shadow: none;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    padding: 15px 25px;
+    color: #ffffff;
+    border: 2px solid #2F609E;
+    border-radius: 26px;
+    background: #2F609E;
+    text-transform: none;
+    letter-spacing: .05em;
+    transition: 0.3s; }
   @media (max-width: 1229px) {
     .btn, body:not(.touch) .btn:focus {
       font-size: 14px;
@@ -6684,19 +6702,19 @@ body:not(.touch) .btn-gradient:hover {
       color: #2F609E; }
 
 .btn-white, .btn-white:focus, body:not(.touch) .btn-white:focus {
-  border-color: #232F6D;
-  color: #232F6D; }
+  border-color: #2F609E;
+  color: #ffffff; }
   @media (max-width: 767px) {
     .btn-white, .btn-white:focus, body:not(.touch) .btn-white:focus {
       box-shadow: inset 0 0 0 1px #2F609E; } }
 
 body:not(.touch) .btn-white:hover, .btn-white:hover {
-  color: #2F609E; }
+  color: #ffffff; }
   @media (max-width: 767px) {
     body:not(.touch) .btn-white:hover, .btn-white:hover {
       box-shadow: inset 0 0 0 1px #2F609E; } }
   body:not(.touch) .btn-white:hover [class*='icon'], .btn-white:hover [class*='icon'] {
-    color: #2F609E; }
+    color: #ffffff; }
 
 .dropdown {
   max-width: 370px; }
