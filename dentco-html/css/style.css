@@ -11859,15 +11859,24 @@ body.noScroll {
   #mainSlider .slide-content.center {
     text-align: center; }
   #mainSlider .slide-txt2 {
-    font-size: 16px;
-    line-height: 1em;
+    font-size: 54px;
+    line-height: 1.26em;
+    font-weight: 400;
     font-family: "Poppins", serif;
-    color: #fff;
+    color: #2F609E;
     margin: 0;
-    letter-spacing: .03em; }
+    text-transform: uppercase; }
     #mainSlider .slide-txt2:not(:first-child) {
       margin-top: 25px; }
   #mainSlider .slide-txt1 {
+    font-size: 54px;
+    line-height: 1.26em;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+    color: #ac2f32;
+    margin: 0;
+    text-transform: uppercase; }
+      #mainSlider .slide-txt1 {
     font-size: 54px;
     line-height: 1.26em;
     font-weight: 400;
